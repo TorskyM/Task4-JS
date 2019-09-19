@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:300i,400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i&display=swap');
+@import './variables.scss', './mixins.scss', './base.scss', './minwidth992.scss', './minwidth768.scss', './minwidth576.scss', './minwidth250.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}

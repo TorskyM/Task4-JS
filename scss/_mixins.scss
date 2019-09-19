@@ -1,0 +1,51 @@
+@mixin flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin title-style {
+    margin: 0 0 10px;
+    font-family: $montserrat-font;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin pretitle-style {
+    margin-top: 7vh;
+    font-family: $kaushan-font;
+}
+
+@mixin paragraph-style {
+    width: 80vw;
+    font-family: $roboto-font;
+    font-size: 14px;
+    text-align: center;
+    color: $dark-gray;
+}
+
+@mixin dash-style {
+    width: 60px;
+    height: 3px;
+    margin: 5px;
+    background-color: $dash-color;
+}
+
+@mixin heading-style {
+    font-family: $montserrat-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $broun-gray;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}

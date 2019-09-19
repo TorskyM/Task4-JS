@@ -1,0 +1,1089 @@
+.header {
+    @include flex-align;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    background: linear-gradient($gradient-color), url("../images/Layer_15.png") no-repeat center center / cover;
+    font-family: $montserrat-font;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+
+    &-navigation {
+        @include flex-align;
+        position: fixed;
+        z-index: 100;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(to top, ($gradient_pink), ($dash-color));
+    }
+
+    &-logo {
+        position: absolute;
+        left: 5vw;
+        font-family: $montserrat-font;
+        font-size: 20px;
+        text-transform: initial;
+        color: $white;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    &-item {
+        padding: 10px;
+    }
+
+    &-link {
+        transition: color 0.3s ease;
+        border-bottom: 1px solid $gradient_yellow;
+        border-width: 0px;
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $gradient_yellow;
+            border-width: 2px;
+            transition: 0.2s;
+        }
+    }
+
+    &-pictogram {
+        position: absolute;
+        right: 20vw;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+        margin-top: 50px;
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+
+    &-title {
+        @include title-style;
+        margin: 0;
+        width: 60vw;
+        font-size: 55px;
+    }
+
+    .dash {
+        margin: 0;
+        padding: 0;
+        background-color: $white;
+    }
+
+    &-more {
+        @include heading-style;
+        border: 2px solid $white;
+        width: 100px;
+        height: 25px;
+        background: none;
+        font-size: 10px;
+        color: $white;
+    }
+
+    &-tab {
+        @include flex-align;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 70vw;
+    }
+
+    &-btn {
+        @include heading-style;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(to right, $line-gradient-red 20%, $white 20%) 0.5 0;
+        border-bottom: none;
+        background: none;
+        width: 15vw;
+        height: 10vh;
+        color: $white;
+
+        &-title {
+            display: inline-block;
+            padding-right: 5px;
+            font-size: 19px;
+
+        }
+
+        &-name {
+            @include heading-style;
+            color: $white;
+        }
+    }
+
+    .pictogram-symbol {
+        transition: 0.5s;
+        padding: 10px;
+    }
+}
+
+.header-position {
+    background: none;
+}
+
+.paragraph-style {
+    @include paragraph-style;
+}
+
+.dash {
+    @include dash-style;
+}
+
+.story {
+    &-content {
+        @include flex-align;
+        flex-direction: column;
+
+    }
+
+    &-wrapper-top {
+        @include flex-align;
+        flex-direction: column;
+    }
+
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-paragraph {
+        @include paragraph-style;
+        margin: 3vh 0 7vh;
+    }
+
+    &-album {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+
+        &-pic {
+            display: block;
+            width: 30vw;
+            padding: 20px 0;
+        }
+    }
+
+    &-wrapper-top {
+        position: relative;
+
+        &:hover {
+            transform: translate(-15px, -15px);
+            transition: .5s;
+            box-shadow: 10px 10px $turquoise;
+        }
+    }
+
+    &-wrapper {
+        @include flex-align;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-image: linear-gradient($gradient-color);
+        color: $white;
+
+        &:hover {
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+
+    &-bg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            @include heading-style;
+            color: $white;
+        }
+    }
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+    height: 25vh;
+    background-color: $turquoise;
+
+    &-number {
+        border-right: 1px solid rgba($color: $white, $alpha: .3);
+        width: 16vw;
+        height: 20vh;
+        padding: 25px 0;
+        text-align: center;
+
+        &:first-child {
+            border-left: 1px solid rgba($color: $white, $alpha: .3);
+        }
+    }
+
+    &-digit {
+        @include title-style;
+        font-size: 72px;
+        color: $white;
+    }
+
+    &-description {
+        @include heading-style;
+        color: $white;
+    }
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10vw;
+    width: 80vw;
+    height: 70vh;
+
+    &-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .separate-border {
+        margin: 20px 0;
+        border-top: 1px solid $border-color;
+        padding-top: 20px;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+        margin-top: 15px;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-paragraph {
+        text-align: left;
+    }
+
+    &-heading {
+        @include heading-style;
+    }
+
+    &-article {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 25vw;
+    }
+
+    &-pic {
+        padding-right: 10px;
+    }
+
+    &-paragraph {
+        width: 18vw;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: left;
+    }
+}
+
+.devices {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, $white-gradient), url("../images/Layer_53.png") no-repeat center center / cover;
+    height: 95vh;
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-display {
+        position: absolute;
+        bottom: 0;
+        width: 40vw;
+        height: 70vh;
+    }
+
+    &-iphone {
+        position: absolute;
+        right: 14vw;
+        bottom: -12vh;
+        height: 60vh;
+    }
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-top {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid $border-color;
+        padding: 5px;
+    }
+
+    &-arrow {
+        position: absolute;
+        right: 20px;
+        transform: rotate(180deg);
+        transition: ease-in 0.3s;
+        height: 10px;
+    }
+
+    &-image {
+        width: 50vw;
+    }
+
+    &-tabs {
+        margin-left: 30px;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+        font-weight: 700;
+    }
+
+    &-heading {
+        @include heading-style;
+        margin-left: 10px;
+    }
+
+    .no-scroll {
+        overflow: unset;
+        width: 80vw;
+        border: none;
+    }
+
+    &-paragraph {
+        text-align: left;
+        width: 35vw;
+        height: 15vh;
+        overflow: scroll;
+        border: 1px solid $border-color;
+        border-top: none;
+        border-bottom: none;
+        padding: 5px;
+
+        &:last-child {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}
+
+.hide-block {
+    height: 0px;
+    transition: height 1s ease-out;
+    -webkit-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    float: left;
+    display: block;
+}
+
+.team {
+    @include flex-align;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-person {
+        @include flex-align;
+        flex-direction: column;
+    }
+
+    &-pic {
+        margin: 0;
+    }
+
+    &-wrapper {
+        position: relative;
+
+        &:hover {
+            transform: translate(-10px, -10px);
+            transition: .5s;
+            box-shadow: 5px 5px $turquoise;
+        }
+    }
+
+    &-icons {
+        @include flex-align;
+        width: 50px;
+        height: 50px;
+        border-right: 1px solid $dash-color;
+
+        &:hover {
+            background-color: $dash-color;
+
+            .team-icons-pic {
+                filter: hue-rotate(360deg) sepia(1) saturate(50);
+                transition: 2s ease-in-out;
+            }
+        }
+    }
+
+    &-social {
+        @include flex-align;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-image: linear-gradient($gradient-color);
+        color: $white;
+
+        &-wrapper {
+            @include flex-align;
+            background-color: $gradient_yellow;
+        }
+
+        &:hover {
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+
+    &-name {
+        @include heading-style;
+        margin: 10px 0;
+    }
+
+    &-pic {
+        width: 20vw;
+        margin-left: 5vh;
+    }
+
+    &-role {
+        width: auto;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-paragraph {
+        margin: 5vh 0;
+    }
+}
+
+.partners {
+    @include flex-align;
+    background-color: $bg-gray;
+
+    &-image {
+        margin: 3vh;
+        width: 10vw;
+    }
+}
+
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+    overflow: hidden;
+    background-color: $light-gray;
+
+    &-wrapper {
+        @include flex-align;
+        flex-direction: row;
+        transition: 0.5s ease;
+    }
+
+    &-container {
+        margin: 0 15px;
+    }
+
+    &-arrow {
+        margin: 0 20px;
+    }
+
+    &-speech {
+        height: 30px;
+        border: 3px solid $turquoise;
+        padding: 20px;
+    }
+
+    &-person {
+        margin-left: 15px;
+        width: 11vw;
+    }
+
+    &-paragraph {
+        width: 50vw;
+        text-align: left;
+    }
+
+    &-name {
+        @include pretitle-style;
+        margin-top: 10px;
+    }
+
+    &-arrow-right {
+        position: absolute;
+        z-index: 1;
+        right: 10vw;
+        cursor: pointer;
+    }
+
+    &-arrow-left {
+        position: absolute;
+        z-index: 1;
+        left: 10vw;
+    }
+
+    .gallery {
+        @include flex-align;
+        width: 100vw;
+    }
+
+    .slides-wrapper {
+        @include flex-align;
+        overflow: hidden;
+        margin: 0 10vw;
+        width: 100vw;
+    }
+
+    .slider-animation-right {
+        transform: translateX(100vw);
+        transition: 1s ease-in-out;
+    }
+
+    .slider-animation-left {
+        transform: translateX(-100vw);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.deliberation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, $white-gradient), url("../images/Layer_53.png") no-repeat center center / cover;
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-quote {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 7vw;
+    }
+
+    &-description {
+        margin: 35px 0 0 10px;
+    }
+
+    &-name {
+        @include heading-style;
+    }
+
+    &-role {
+        @include paragraph-style;
+        margin: 5px 0;
+        width: auto;
+        font-family: $roboto-font;
+        font-weight: 300;
+        font-style: italic;
+        text-align: left;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-paragraph {
+        width: 30vw;
+        text-align: left;
+    }
+}
+
+.example {
+    @include flex-align;
+    flex-direction: column;
+    margin-top: 20px;
+
+    &-container {
+        display: grid;
+        grid-template-columns: min-content min-content min-content min-content;
+        margin-top: 20px;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include title-style;
+    }
+
+    &-paragraph {
+        margin: 5vh 0;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: min-content min-content;
+    }
+
+    .grid-left {
+        display: grid;
+        grid-template-columns: min-content;
+    }
+
+    &-hover {
+        position: relative;
+    }
+
+    &-picture {
+        display: block;
+    }
+
+    &-bg {
+        @include flex-align;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient($gradient-color);
+        color: $white;
+
+        &:hover {
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+
+    &-wrapper {
+        @include flex-align;
+        flex-direction: column;
+    }
+
+    &-picture {
+        width: 25vw;
+    }
+
+    &-paragraph {
+        margin: 0;
+    }
+
+    &-under {
+        @include heading-style;
+        margin-top: 10px;
+        color: $white;
+    }
+
+    &-large {
+        display: grid;
+        grid-template-columns: min-content;
+        width: 25vw;
+    }
+
+    .gallery-bg {
+        display: none;
+        position: fixed;
+        z-index: 101;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background-color: $black;
+        background-color: $black;
+
+        &-caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: $light-gray;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        &-content {
+            margin: auto;
+            display: block;
+            animation-name: zoom-in;
+            animation-duration: 0.4s;
+            width: 60vw;
+            max-width: 700px;
+        }
+    }
+
+    .restriction {
+        margin: auto;
+        width: 60vw;
+        height: 90vh;
+    }
+
+    .gallery-close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: $white;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .gallery-close:hover,
+    .gallery-close:focus {
+        color: $border-color;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7vh;
+    width: 100vw;
+    height: 70vh;
+
+    &-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: self-end;
+        width: 100vw;
+
+    }
+
+    &-pic {
+        position: relative;
+    }
+
+    &-wrapper {
+        position: absolute;
+        bottom: 3vh;
+        left: 0;
+    }
+
+    &-date {
+        @include flex-align;
+        flex-direction: column;
+        width: 45px;
+        height: 55px;
+        background-color: $turquoise;
+        color: $white;
+    }
+
+    &-month {
+        font-family: $open-sans-font;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 30vw;
+    }
+
+    &-pretitle {
+        @include pretitle-style;
+    }
+
+    &-title {
+        @include heading-style;
+        margin-top: 15px;
+    }
+
+    &-title-style {
+        height: 13vh;
+        text-align: center;
+    }
+
+    &-paragraph {
+        overflow: scroll;
+        margin: 10px 0 25px 0;
+        width: 30vw;
+        height: 15vh;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    &-image {
+        width: 30vw;
+        height: 15vh;
+    }
+
+    &-views {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-view-number {
+        margin-right: 10px;
+        font-family: $open-sans-font;
+        color: $dark-gray;
+    }
+
+    &-speech-number {
+        font-family: $open-sans-font;
+        color: $dark-gray;
+    }
+}
+
+.map {
+    @include flex-align;
+    flex-direction: column;
+    height: 20vh;
+    background: linear-gradient(to bottom, $white-gradient), url("../images/Layer_59.png") no-repeat center center / cover;
+
+    &-title {
+        @include title-style;
+        margin: 10px 0;
+        font-size: 24px;
+        color: $dash-color;
+    }
+}
+
+.share {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $light-gray;
+    padding-top: 5vw;
+
+    &-follow {
+        margin: 15px 0;
+        border: 1px solid $border-color;
+        border-right: none;
+        border-left: none;
+        padding: 15px 0;
+    }
+
+    &-wrapper {
+        @include flex-align;
+        justify-content: flex-start;
+    }
+
+    &-pictogram {
+        margin-left: 15px;
+    }
+
+    &-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-title {
+        @include title-style;
+        color: $title-color;
+        font-size: 36px;
+        text-transform: initial;
+    }
+
+    &-text {
+        margin: 15px 0;
+        width: auto;
+        text-align: left;
+    }
+
+    &-paragraph {
+        text-align: left;
+        width: 30vw;
+    }
+
+    &-count {
+        margin-top: 20px;
+        font-family: $monterrat-bold-font;
+        color: $broun-gray;
+    }
+
+    &-followers {
+        @include paragraph-style;
+        padding-left: 5px;
+        font-weight: initial;
+        color: $broun-gray;
+    }
+
+    &-form {
+        @include flex-align;
+        justify-content: flex-start;
+        margin-top: 15px;
+
+        &-text {
+            width: 150px;
+            height: 30px;
+            border: 1px solid $text-border;
+            outline: none;
+
+            &::placeholder {
+                padding-left: 5px;
+                color: $border-color;
+            }
+        }
+
+        &-btn {
+            margin-left: -1px;
+            width: 100px;
+            height: 32px;
+            border: 1px solid $turquoise;
+            outline: none;
+            background-color: $turquoise;
+            font-family: $montserrat-font;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+}
+
+.blogs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &-item {
+        @include flex-align;
+        margin-bottom: 30px;
+        width: 30vw;
+
+        &-wrapper {
+            margin-left: 15px;
+        }
+    }
+
+    &-pretitle {
+        @include heading-style;
+        font-weight: 500;
+    }
+
+    &-heading {
+        @include heading-style;
+        font-weight: 500;
+    }
+
+    &-image {
+        width: 50%;
+        height: 70px;
+    }
+}
+
+.instagram {
+    &-wrapper {
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        grid-gap: 2px;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        @include heading-style;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    &-view {
+        @include paragraph-style;
+
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid $border-color;
+
+    &-text {
+        margin-top: 10px;
+        font-family: $montserrat-font;
+        font-size: 14px;
+        color: $broun-gray;
+    }
+
+    &-link {
+        color: $dash-color;
+    }
+}

@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+    .paragraph-style {
+        font-size: 12px
+    }
+
+    .header {
+        &-btn {
+            &-title {
+                display: none;
+            }
+        }
+    }
+
+    .story {
+        &-album {
+            flex-direction: column;
+            
+            &-pic {
+                width: auto;
+            }
+        }
+    }
+
+    .count {
+        &-number {
+            height: 15vh;
+            padding: 28px 0;
+        }
+
+        &-digit {
+            font-size: 45px;
+        }
+
+        &-description {
+            font-size: 12px;
+        }
+    }
+
+    .devices {
+        &-display {
+            height: 65%;
+        }
+
+        &-iphone {
+            height: 52%;
+        }
+    }
+
+    .services {
+        &-paragraph {
+            font-size: 10px;
+        }
+
+        &-article {
+            margin: 5px;
+        }
+    }
+
+    .what-we-do {
+        &-content {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &-image {
+            width: 60vw;
+        }
+
+        &-tabs {
+            margin: 2vh 10vw;
+        }
+
+        &-paragraph {
+            width: inherit;
+        }
+    }
+
+    .team {
+        &-content {
+            flex-direction: column;
+        }
+
+        &-pic {
+            width: auto;
+        }
+    }
+
+.partners {
+    flex-flow: row wrap;
+
+    &-image {
+        margin: 3vh;
+        width: 20vw;
+    }
+}
+
+    .quote {
+        &-paragraph {
+            font-size: 10px;
+        }
+    }
+
+    .share {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+
+        &-right {
+            align-items: center;
+            text-align: center;
+        }
+
+        &-paragraph {
+            text-align: center;
+        }
+    }
+
+    .blogs {
+        width: 35vw;
+
+        &-item {
+            width: 35vw;
+        }
+
+        &-heading {
+            font-size: 12px;
+        }
+    }
+}

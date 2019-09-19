@@ -1,0 +1,21 @@
+@media (min-width: 250px) {
+    .header {
+        &-navigation {
+            flex-direction: column;
+            height: auto;
+        }
+    }
+
+    .count {
+        &-number {
+            height: 15vh;
+            padding: 28px 2px;
+        }
+
+        &-description {
+            padding: 0 2px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}
