@@ -30,7 +30,6 @@ const fetchData = {
       },
     };
 
-
     fetch(API)
         .then((response) => response.json())
         .then((data) => {

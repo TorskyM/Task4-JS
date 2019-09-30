@@ -41,7 +41,6 @@
 
     .count {
         &-number {
-            height: 15vh;
             padding: 28px 2px;
         }
 
@@ -134,15 +133,7 @@
             align-items: center;
         }
 
-        &-pic {
-            width: 60vw;
-        }
-
         &-image {
-            width: 60vw;
-        }
-
-        &-paragraph {
             width: 60vw;
         }
     }

@@ -16,7 +16,7 @@ function checkIndex(event) {
     if (i === hideIndex) {
       collapseBlocks[i].classList.toggle('hide-block');
       imageRewrite.src = srcArr[i];
-      imageRewrite.style.height = `${35}vh`;
+      imageRewrite.style.height = `${50}vh`;
     } else collapseBlocks[i].classList.add('hide-block');
   }
 }

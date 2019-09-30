@@ -1,16 +1,17 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 
+const mainBlock = [...document.querySelectorAll('.quote')];
+const buttonPrev = [...document.querySelectorAll('.prev')];
+const buttonNext = [...document.querySelectorAll('.next')];
+const mainBlocksLeng = mainBlock.length;
+const leftSlide = 0;
+const centerSlide = 1;
+const rightSlide = 2;
+
 const slider = (function() {
   return {
     init: () => {
-      const mainBlock = [...document.querySelectorAll('.quote')];
-      const buttonPrev = [...document.querySelectorAll('.prev')];
-      const buttonNext = [...document.querySelectorAll('.next')];
-      const mainBlocksLeng = mainBlock.length;
-      const leftSlide = 0;
-      const centerSlide = 1;
-      const rightSlide = 2;
       let count = 1;
 
       const moveRight = () => {

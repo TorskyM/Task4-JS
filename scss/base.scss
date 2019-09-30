@@ -338,7 +338,7 @@
 
     &-iphone {
         position: absolute;
-        right: 14vw;
+        right: 20vw;
         bottom: -12vh;
         height: 60vh;
     }
@@ -365,6 +365,7 @@
         justify-content: flex-start;
         align-items: center;
         border: 1px solid $border-color;
+        cursor: pointer;
         padding: 5px;
     }
 
@@ -378,7 +379,7 @@
 
     &-image {
         width: 50vw;
-        height: 35vh;
+        height: 55vh;
     }
 
     &-tabs {
@@ -473,6 +474,7 @@
             .team-icons-pic {
                 filter: hue-rotate(360deg) sepia(1) saturate(50);
                 transition: 2s ease-in-out;
+                cursor: pointer;
             }
         }
     }
@@ -597,6 +599,7 @@
         position: absolute;
         z-index: 1;
         left: 10vw;
+        cursor: pointer;
     }
 
     .gallery {
@@ -738,6 +741,7 @@
     &-wrapper {
         @include flex-align;
         flex-direction: column;
+        cursor: pointer;
     }
 
     &-picture {
@@ -823,7 +827,6 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 7vh;
-    width: 100vw;
     height: 70vh;
 
     &-container {
@@ -885,7 +888,7 @@
     &-paragraph {
         overflow: scroll;
         margin: 10px 0 25px 0;
-        width: 30vw;
+        width: auto;
         height: 5vh;
         border-bottom: 1px solid $border-color;
         padding-bottom: 10px;
@@ -895,7 +898,7 @@
 
     &-image {
         width: 30vw;
-        height: 25vh;
+        height: 30vh;
     }
 
     &-views {
@@ -999,6 +1002,7 @@
             width: 150px;
             height: 30px;
             border: 1px solid $text-border;
+            padding-left: 15px;
             outline: none;
 
             &::placeholder {
